@@ -3,8 +3,8 @@
  * Plugin Name: Faculty/Staff Directory
  * Plugin URI: http://www.jcummings.net
  * Description: A directory for Faculty/Staff of a school, college, university, etc.
- * Version: 1.51
- * Author: John Cummings
+ * Version: 1.5.2
+ * Author: John Cummings, Dave Staab
  * Author URI: http://www.jcummings.net
  * License: GPL2
  */
