@@ -1,7 +1,8 @@
 <?php
-$custom_terms = get_terms('profile-category');
-// echo '<p>'.print_r($custom_terms).'</p>';
-// echo 'hello world!';
+$custom_terms = get_terms('profile-category', array('orderby' => 'slug'));
+// echo '<pre>';
+// print_r($custom_terms);
+// echo '</pre>';
 foreach($custom_terms as $custom_term) {
     wp_reset_query();
     $args = array(
