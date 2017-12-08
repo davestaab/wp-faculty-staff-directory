@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.5.3] - 2017-12-07
+### Changed
+- now sorting categories by slug when using 'By Category' display style
+
 ## [1.5.2] - 2017-11-28
 
 ### Changed
