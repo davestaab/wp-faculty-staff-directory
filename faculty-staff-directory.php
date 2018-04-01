@@ -32,7 +32,9 @@ if ( ! defined( 'WPINC' ) ) {
 //Add necessary JS and CSS
 add_action('admin_enqueue_scripts', 'add_fs_js');   
 function add_fs_js(){    
-  wp_enqueue_style( 'facstaff-style', plugins_url('/css/faculty-staff-styles.css', __FILE__) );
+//   wp_enqueue_style( 'facstaff-style', plugins_url('/css/faculty-staff-styles.css', __FILE__) );
+  wp_enqueue_style( 'facstaff-style', 'https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css' );
+  
 }
 
 //Create custom post type
@@ -319,6 +321,10 @@ function facstaff_directory_shortcode( $atts, $content = null ) {
 
 	if(get_option('fsdirectory_displaystyle')=='By Category'){
 		$display_option='/display-templates/facstaff-category-template.php';
+	}
+
+    if(get_option('fsdirectory_displaystyle')=='By Category Cards'){
+		$display_option='/display-templates/facstaff-category-cards-template.php'; 
 	}
 
 	/*if(get_option('fsdirectory_displaystyle')=='hCard List'){

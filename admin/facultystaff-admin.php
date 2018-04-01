@@ -48,6 +48,7 @@ function fsdirectory_options_page() {
 							<option value="Three Column" <?php if(get_option('fsdirectory_displaystyle')=='Three Column'){echo " selected='selected' ";}?>>Three Column</option>
 							<option value="Simple List" <?php if(get_option('fsdirectory_displaystyle')=='Simple List'){echo " selected='selected' ";}?>>Simple List</option>
 							<option value="By Category" <?php if(get_option('fsdirectory_displaystyle')=='By Category'){echo " selected='selected' ";}?>>By Category</option>
+							<option value="By Category Cards" <?php if(get_option('fsdirectory_displaystyle')=='By Category Cards'){echo " selected='selected' ";}?>>By Category w/ Cards</option>
 							<!--<option value="hCard List" <?php if(get_option('fsdirectory_displaystyle')=='hCard List'){echo " selected='selected' ";}?>>hCard/vCard Compliant List</option>-->
 						</select>
 						
