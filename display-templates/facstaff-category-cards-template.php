@@ -41,10 +41,10 @@ foreach($custom_terms as $custom_term) {
             // // echo '<a href="'.get_permalink($facstaff_posts->ID).'">'.get_the_title().'</a><br>';
             echo '
               <a href="' . get_permalink($facstaff_posts->ID) . '">
-                <div class="tc ma2 pa2 ba b--black-20">
+                <div class="tc ma2 pa2 mw5">
                   <img src="' . get_the_post_thumbnail_url(null, [150, 150]) . '" class="br-100 h4 w4 dib ba b--black-20 pa2" title="staff photo">
-                  <h1 class="f3 mb2 mw4">' . get_the_title() . '</h1> 
-                  <h2 class="f5 fw4 gray mt0 mw4">' . get_post_meta(get_the_ID(), 'facstafftitle', true) . '</h2> 
+                  <h1 class="f3 mb2">' . get_the_title() . '</h1> 
+                  <div class="f7 fw4 gray">' . get_post_meta(get_the_ID(), 'facstafftitle', true) . '</div>
                 </div>
               </a>
             ';
